@@ -1,6 +1,5 @@
 # Royalty-Splitter
 
-> **🟡 Priority:** Medium | **Difficulty:** Low–Medium | **Estimated Effort:** 1–2 days
 
 The royalty distribution contract for the [Afristore Marketplace](https://github.com/Afristore/marketplace) — extracted from the monorepo into its own dedicated repository.
 
@@ -17,7 +16,7 @@ This Soroban smart contract implements:
 
 ---
 
-## 🚀 Getting Started (once code is populated)
+##  Getting Started (once code is populated)
 
 ```bash
 # Build the contract WASM
@@ -39,7 +38,7 @@ stellar contract deploy --wasm target/wasm32-unknown-unknown/release/royalty_spl
 
 ---
 
-## 🔧 Prerequisites
+##  Prerequisites
 
 - Rust (stable)
 - `wasm32-unknown-unknown` target: `rustup target add wasm32-unknown-unknown`
@@ -47,14 +46,14 @@ stellar contract deploy --wasm target/wasm32-unknown-unknown/release/royalty_spl
 
 ---
 
-## 🔐 Security
+##  Security
 
 - `update_royalty_split` requires admin authorization via `require_auth` — non-admin calls will panic.
 - Any split configuration where shares do not sum to 100% is rejected.
 
 ---
 
-## 📋 Source Location (Monorepo)
+##  Source Location (Monorepo)
 
 This repository is being extracted from [`afristore/contracts/royalty-splitter/`](https://github.com/Afristore/marketplace/tree/master/contracts/royalty-splitter) in the main monorepo.
 
@@ -62,7 +61,7 @@ This repository is being extracted from [`afristore/contracts/royalty-splitter/`
 
 ---
 
-## 🤝 Contributing
+##  Contributing
 
 1. Fork this repository
 2. Create a feature branch: `git checkout -b feat/your-feature`
@@ -77,7 +76,7 @@ This repository is being extracted from [`afristore/contracts/royalty-splitter/`
 
 ---
 
-## 📦 Tech Stack
+##  Tech Stack
 
 - Rust + `soroban-sdk v25.3.0`
 - Stellar / Soroban smart contract platform
